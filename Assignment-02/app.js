@@ -320,42 +320,42 @@
 
 // Question No 06:
 
-        // var subject1Marks = parseFloat(prompt("Enter marks obtained in Subject 1:"));
-        // var subject2Marks = parseFloat(prompt("Enter marks obtained in Subject 2:"));
-        // var subject3Marks = parseFloat(prompt("Enter marks obtained in Subject 3:"));
-        // var totalMarks = parseFloat(prompt("Enter total marks:"));
+//         var subject1Marks = parseFloat(prompt("Enter marks obtained in Subject 1:"));
+//         var subject2Marks = parseFloat(prompt("Enter marks obtained in Subject 2:"));
+//         var subject3Marks = parseFloat(prompt("Enter marks obtained in Subject 3:"));
+//         var totalMarks = parseFloat(prompt("Enter total marks:"));
 
-        // var totalObtainedMarks = subject1Marks + subject2Marks + subject3Marks;
+//         var totalObtainedMarks = subject1Marks + subject2Marks + subject3Marks;
 
-        // var percentage = (totalObtainedMarks / totalMarks) * 100;
+//         var percentage = (totalObtainedMarks / totalMarks) * 100;
 
-        // var grade, remarks;
+//         var grade, remarks;
 
-        // if (percentage >= 90) {
-        //     grade = "A+";
-        //     remarks = "Excellent";
-        // } else if (percentage >= 80) {
-        //     grade = "A";
-        //     remarks = "Very Good";
-        // } else if (percentage >= 70) {
-        //     grade = "B";
-        //     remarks = "Good";
-        // } else if (percentage >= 60) {
-        //     grade = "C";
-        //     remarks = "Satisfactory";
-        // } else if (percentage >= 50) {
-        //     grade = "D";
-        //     remarks = "Needs Improvement";
-        // } else {
-        //     grade = "F";
-        //     remarks = "Sorry";
-        // }
+//         if (percentage >= 90) {
+//             grade = "A+";
+//             remarks = "Excellent";
+//         } else if (percentage >= 80) {
+//             grade = "A";
+//             remarks = "Very Good";
+//         } else if (percentage >= 70) {
+//             grade = "B";
+//             remarks = "Good";
+//         } else if (percentage >= 60) {
+//             grade = "C";
+//             remarks = "Satisfactory";
+//         } else if (percentage >= 50) {
+//             grade = "D";
+//             remarks = "Needs Improvement";
+//         } else {
+//             grade = "F";
+//             remarks = "Sorry";
+//         }
 
-        // document.write("Total Marks: " + totalMarks + "<br>");
-        // document.write("Marks Obtained: " + totalObtainedMarks + "<br>");
-        // document.write("Percentage: " + percentage.toFixed(2) + "%<br>");
-        // document.write("Grade: " + grade + "<br>");
-        // document.write("Remarks: " + remarks);
+//         document.write("Total Marks: " + totalMarks + "<br>");
+//         document.write("Marks Obtained: " + totalObtainedMarks + "<br>");
+//         document.write("Percentage: " + percentage.toFixed(2) + "%<br>");
+//         document.write("Grade: " + grade + "<br>");
+//         document.write("Remarks: " + remarks);
     
 // Question No 07:
 
@@ -409,35 +409,35 @@
 
 // Question No 11:
 
-        // var firstNumber = parseFloat(prompt("Enter the first number:"));
-        // var secondNumber = parseFloat(prompt("Enter the second number:"));
-        // var operation = prompt("Enter the operation (+, -, *, /, %):");
-        // var result;
-        // if (operation === "+") {
-        //     result = firstNumber + secondNumber;
-        // } else if (operation === "-") {
-        //     result = firstNumber - secondNumber;
-        // } else if (operation === "*") {
-        //     result = firstNumber * secondNumber;
-        // } else if (operation === "/") {
-        //     if (secondNumber === 0) {
-        //         document.write("Division by zero is not allowed.");
-        //     } else {
-        //         result = firstNumber / secondNumber;
-        //     }
-        // } else if (operation === "%") {
-        //     if (secondNumber === 0) {
-        //         document.write("Modulus by zero is not allowed.");
-        //     } else {
-        //         result = firstNumber % secondNumber;
-        //     }
-        // } else {
-        //     document.write("Invalid operation. Please use +, -, *, /, or %.");
-        // }
+//         var firstNumber = parseFloat(prompt("Enter the first number:"));
+//         var secondNumber = parseFloat(prompt("Enter the second number:"));
+//         var operation = prompt("Enter the operation (+, -, *, /, %):");
+//         var result;
+//         if (operation === "+") {
+//             result = firstNumber + secondNumber;
+//         } else if (operation === "-") {
+//             result = firstNumber - secondNumber;
+//         } else if (operation === "*") {
+//             result = firstNumber * secondNumber;
+//         } else if (operation === "/") {
+//             if (secondNumber === 0) {
+//                 document.write("Division by zero is not allowed.");
+//             } else {
+//                 result = firstNumber / secondNumber;
+//             }
+//         } else if (operation === "%") {
+//             if (secondNumber === 0) {
+//                 document.write("Modulus by zero is not allowed.");
+//             } else {
+//                 result = firstNumber % secondNumber;
+//             }
+//         } else {
+//             document.write("Invalid operation. Please use +, -, *, /, or %.");
+//         }
 
-        // if (result !== undefined) {
-        //     document.write("Result: " + result);
-        // }
+//         if (result !== undefined) {
+//             document.write("Result: " + result);
+//         }
    
 
 
