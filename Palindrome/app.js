@@ -1,25 +1,13 @@
-// program to check if the string is palindrome or not
+// Take Input From User:
+var str = prompt("Please enter a String: ")
 
-function checkPalindrome(string) {
+// Length Of A String: 
+var len = str.length
+var msg = "It's a palindrome"
 
-    // find the length of a string
-    const len = string.length;
-
-    // loop through half of the string
-    for (let i = 0; i < len / 2; i++) {
-
-        // check if first and last string are same
-        if (string[i] !== string[len - 1 - i]) {
-            return "It is not a palindrome";
-        }
+for(var i = 0; i < len/2; i++){
+    if(str[i] != str[len -1 -i]){
+        console.log(str + " It's not a palindrome")
     }
-    return "It is a palindrome";
 }
-
-// take input
-const string = prompt('Enter a string: ');
-
-// call the function
-const value = checkPalindrome(string);
-
-console.log(value);
+console.log(str + " " + msg)
