@@ -1,0 +1,55 @@
+body{
+    background-image: url("images/biometrics-1140x641-1.jpg" );
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.wrapper{
+    border: none;
+    text-align: center;
+    height:300px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 280px;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #000;
+padding-top: 20px;
+text-align: center;
+}
+#password{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+#password-btn{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 17px;
+    border: none;
+    color: #fff;
+    background-color: #000;
+    border-radius: 10%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.credits{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    margin-top: 1rem;
+    border-top: var(--border);
+    color: #000;
+}
+.credits span{
+    color: #fff;
+}
