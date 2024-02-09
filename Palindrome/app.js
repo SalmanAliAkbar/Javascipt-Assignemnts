@@ -1,13 +1,20 @@
-// // Take Input From User:
-// var str = prompt("Please enter a String: ")
+function checkPal(){
+let str = document.getElementById("input").value 
+let strLength = str.length 
+let isPalindrome = true
 
-// // Length Of A String: 
-// var len = str.length
-// var msg = "It's a palindrome"
+for(let i = 0; i < strLength/2; i++) {
+    if(str[i] !== str[strLength - i - 1]) {
+        isPalindrome = false
+        break
+    }
+}
 
-// for(var i = 0; i < len/2; i++){
-//     if(str[i] != str[len -1 -i]){
-//         console.log(str + " It's not a palindrome")
-//     }
-// }
-// console.log(str + " " + msg)
+let result = document.getElementById("result")
+if(isPalindrome) {
+    result.innerHTML = "Yes, it's a Palindrome"
+}
+else{
+    result.innerHTML = "No, it's not a Palindrome"
+}
+}

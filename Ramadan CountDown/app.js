@@ -1,8 +1,26 @@
-let ramadanDate = new Date("03-10-2024")
-let todayDate = new Date(prompt("Enter Your Date in MM/ DD / YYYY Formate"))
 
-let diff = ramadanDate.getTime() - todayDate.getTime()
+let ramdanDate = new Date("03-12-2024 00:00:00").getTime();
 
-let months = diff / (1000 * 60 * 60 * 24)
+function ramadanCount() {
+    let currentDate = new Date().getTime();
 
-alert(`There are ${Math.round(months)} days left in Ramadan`)
+    let diff = ramdanDate - currentDate;
+
+    let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    let hours = Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+    let minutes = Math.floor(diff % (1000 * 60 * 60) / (1000 * 60));
+    let second = Math.floor(diff % (1000 * 60) / 1000);
+
+    let d = (days < 10) ? "0"+days : days
+    let h = (hours < 10) ? "0"+hours : hours
+    let m = (minutes < 10) ? "0"+minutes : minutes
+    let s = (second < 10) ? "0"+second : second
+
+    document.getElementById("days").innerHTML = d + " " + "DAYS"
+    document.getElementById("time").innerHTML = h + ":" + m + ":" + s
+}
+
+setInterval(function () {
+    ramadanCount();
+
+},1000)
