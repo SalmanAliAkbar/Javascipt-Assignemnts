@@ -1,0 +1,172 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.stopwatch, .timer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.5s;
+    margin-bottom: 20px;
+}
+
+.stopwatch:hover, .timer:hover {
+    transform: perspective(1000px) rotateX(15deg);
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem; 
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.display {
+    font-size: 3rem; 
+    margin: 20px 0;
+    background: #222;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    transition: background 0.3s;
+}
+
+.display:hover {
+    background: #444;
+}
+
+.controls button {
+    background: #2575fc;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    font-size: 1rem; 
+}
+
+.controls button:hover {
+    background: #6a11cb;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.controls button:active {
+    background: #2575fc;
+    transform: scale(1);
+}
+
+input[type="number"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px 0;
+    font-size: 1rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .stopwatch, .timer {
+        padding: 15px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .display {
+        font-size: 2.5rem;
+    }
+
+    .controls button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    input[type="number"] {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .stopwatch, .timer {
+        padding: 10px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .display {
+        font-size: 2rem;
+    }
+
+    .controls button {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+
+    input[type="number"] {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+    .display {
+        font-size: 1.5rem;
+    }
+
+    .controls button {
+        padding: 6px 10px;
+        font-size: 0.7rem;
+    }
+
+    input[type="number"] {
+        padding: 4px;
+        font-size: 0.7rem;
+    }
+}
